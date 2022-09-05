@@ -503,11 +503,26 @@
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 400px) {
 
     .platforms-wrapper {
         gap: 70px;
         justify-content: center;
         grid-template-columns: auto auto;
     }
+
+    #featured .featured-grid {
+        overflow-x: scroll;
+        padding: 5px 0 20px 0;
+    }
+
+    #featured {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #featured .section-title, .section-grid, ::deep .buttonApp {
+        margin-left: 20px !important;
+    }
+
 }

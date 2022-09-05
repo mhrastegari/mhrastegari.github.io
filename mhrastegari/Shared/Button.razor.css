@@ -13,8 +13,7 @@
     justify-content: center;
     display: inline-flex;
     font-family: var(--ff-semibold);
-    font-size: var(--text-l-fs);
-    line-height: var(--text-l-lh);
+    font-size: 16px;
     color: white;
     background-color: var(--c-primary);
 }

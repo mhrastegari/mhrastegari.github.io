@@ -173,7 +173,8 @@ header.sticky .close-menu-burger .menu-burger__icon * {
     }
 
     header .menu {
-        backdrop-filter: blur(55px);
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(0, 0, 0, 0.72);
         gap: 20px;
         grid-auto-flow: row;
         grid-auto-rows: min-content;
