@@ -1,0 +1,252 @@
+﻿header .logo-image path {
+    transition: all 0.5s ease;
+}
+
+header {
+    color: var(--c-neutral-white);
+    font-family: var(--ff-semibold);
+    left: 0;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+header:before {
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.05);
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+header.sticky {
+    color: var(--c-primary);
+}
+
+header.sticky:before {
+    animation: headerSticky 0.2s ease-out forwards;
+}
+
+header:not(.sticky):before {
+    animation: headerStickyClose 0.2s ease-out forwards;
+}
+
+@keyframes headerSticky {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes headerStickyClose {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+header.sticky .menu-burger__icon path {
+    fill: var(--c-primary);
+}
+
+header:not(.sticky) .logo-image path {
+    fill: white;
+}
+
+header.sticky .logo-image path {
+    fill: var(--c-primary);
+}
+
+header .logo {
+    width: 185px;
+    align-self: center;
+    font-size: var(--text-xl-lh);
+}
+
+header .logo .logo-image {
+    display: block;
+    max-width: 100%;
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+header .menu {
+    align-items: center;
+    display: grid;
+    font-size: var(--text-l-fs);
+    gap: 45px;
+    grid-auto-flow: column;
+    line-height: var(--text-l-lh);
+}
+
+header .menu a {
+    padding: 8px 14px;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+.logo-menu-burger {
+    display: none;
+    padding: 85px 0 34px;
+}
+
+.menu-burger {
+    display: none;
+    line-height: 0;
+    padding: 8px;
+}
+
+.close-menu-burger {
+    display: none;
+    line-height: 0;
+    padding: 8px;
+    position: absolute;
+    z-index: 902;
+    right: 0;
+    top: 5px;
+}
+
+header.sticky .close-menu-burger .menu-burger__icon * {
+    fill: var(--c-neutral-white);
+}
+
+.menu-burger:hover,
+.close-menu-burger:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1279px) {
+    header .menu {
+        font-size: var(--text-m-fs);
+        gap: 20px;
+        line-height: var(--text-m-lh);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    header .logo {
+        width: 185px;
+    }
+
+    .menu-burger__icon {
+        height: auto;
+        width: 32px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .menu-burger,
+    .logo-menu-burger {
+        display: block;
+    }
+
+    header .menu {
+        backdrop-filter: blur(55px);
+        gap: 20px;
+        grid-auto-flow: row;
+        grid-auto-rows: min-content;
+        inset: 0;
+        position: fixed;
+        text-align: center;
+        transform: translateX(100%);
+        z-index: 900;
+        margin-top: 0;
+        margin: auto;
+        padding: 0;
+    }
+
+    header .menu.visible {
+        animation: menuMobile 0.25s ease-out forwards;
+    }
+
+    /*    header .menu:not(.visible) {
+        animation: menuMobileClose 0.25s ease-out forwards;
+    }
+
+    @keyframes menuMobileClose {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }*/
+
+    @keyframes menuMobile {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    header .menu.visible ~ .close-menu-burger {
+        display: block;
+    }
+
+    header .menu a {
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        padding: 8px 16px;
+    }
+
+    header.sticky {
+        padding: 8px 16px;
+    }
+
+    header .logo {
+        width: 150px;
+    }
+
+    header .menu {
+        gap: 0;
+        margin: auto;
+        padding: 0;
+    }
+
+    .logo-menu-burger {
+        padding: 85px 0 34px;
+    }
+}

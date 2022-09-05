@@ -1,0 +1,10 @@
+﻿@foreach (var repo in Repos)
+{
+    <a href="@repo.HtmlUrl" target="_blank" class="featured-item">
+        <picture class="featured-item__picture">
+            <img src="images/github.png" alt="@repo.Name" height="47px" loading="lazy" />
+        </picture>
+        <h3 class="featured-item__title" style="overflow:hidden; font-size:12px">@repo.Name</h3>
+        <p class="featured-item__stars">@repo.StargazersCount ⭐</p>
+    </a>
+}
