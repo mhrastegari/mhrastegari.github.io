@@ -3,27 +3,27 @@
 }
 
 header {
-    color: var(--c-neutral-white);
     font-family: var(--ff-semibold);
-    left: 0;
+    color: var(--c-neutral-white);
     padding: 20px 60px;
     position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 20;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 header:before {
-    background-color: white;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.05);
-    content: "";
-    display: block;
-    left: 0;
-    opacity: 1;
+    background-color: white;
     position: absolute;
-    top: 0;
+    display: block;
+    content: "";
     width: 100%;
+    opacity: 1;
     z-index: 0;
+    left: 0;
+    top: 0;
 }
 
 header.sticky {
@@ -82,19 +82,19 @@ header .logo .logo-image {
 }
 
 header nav {
-    align-items: center;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    display: flex;
     z-index: 10;
 }
 
 header .menu {
-    align-items: center;
-    display: grid;
-    font-size: var(--text-l-fs);
     gap: 45px;
+    display: grid;
+    align-items: center;
     grid-auto-flow: column;
+    font-size: var(--text-l-fs);
     line-height: var(--text-l-lh);
 }
 
@@ -112,19 +112,18 @@ header .menu a:hover {
 }
 
 .menu-burger {
-    display: none;
     line-height: 0;
+    display: none;
     padding: 8px;
 }
 
 .close-menu-burger {
-    display: none;
-    line-height: 0;
-    padding: 8px;
     position: absolute;
+    line-height: 0;
+    display: none;
+    padding: 8px;
     z-index: 902;
     right: 0;
-    top: 5px;
 }
 
 header.sticky .close-menu-burger .menu-burger__icon * {
@@ -146,8 +145,8 @@ header.sticky .close-menu-burger .menu-burger__icon * {
 
 @media screen and (min-width: 991px) and (max-width: 1279px) {
     header .menu {
-        font-size: var(--text-m-fs);
         gap: 20px;
+        font-size: var(--text-m-fs);
         line-height: var(--text-m-lh);
     }
 }
@@ -173,38 +172,25 @@ header.sticky .close-menu-burger .menu-burger__icon * {
     }
 
     header .menu {
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(0, 0, 0, 0.72);
-        gap: 20px;
-        grid-auto-flow: row;
-        grid-auto-rows: min-content;
-        inset: 0;
-        position: fixed;
-        text-align: center;
         transform: translateX(100%);
-        z-index: 900;
+        grid-auto-rows: min-content;
+        grid-auto-flow: row;
+        text-align: center;
+        position: fixed;
         margin-top: 0;
+        z-index: 900;
         margin: auto;
         padding: 0;
+        gap: 20px;
+        inset: 0;
     }
 
     header .menu.visible {
         animation: menuMobile 0.25s ease-out forwards;
     }
-
-    /*    header .menu:not(.visible) {
-        animation: menuMobileClose 0.25s ease-out forwards;
-    }
-
-    @keyframes menuMobileClose {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(100%);
-        }
-    }*/
 
     @keyframes menuMobile {
         from {
@@ -222,8 +208,8 @@ header.sticky .close-menu-burger .menu-burger__icon * {
 
     header .menu a {
         display: block;
-        padding-bottom: 20px;
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 

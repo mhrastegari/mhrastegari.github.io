@@ -3,42 +3,42 @@
 }
 
 .section__hero {
+    display: flex;
+    height: 100vh;
     align-items: center;
-    background: url("../images/hero_landing_image.png") no-repeat center bottom transparent;
-    background-color: var(--c-primary);
+    padding: 80px unset;
     background-size: cover;
     color: var(--c-neutral-white);
-    display: flex;
-    padding: 80px unset;
-    height: 100vh;
+    background-color: var(--c-primary);
+    background: url("../images/hero_landing_image.png") no-repeat center bottom transparent;
 }
 
 .hero-wrapper {
-    align-items: flex-start;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 767px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .hero-title {
+    margin-bottom: 24px;
     font-family: var(--ff-semibold);
     font-size: var(--headlines-h1-fs);
     line-height: var(--headlines-h1-lh);
-    margin-bottom: 24px;
 }
 
 .hero-description {
+    margin-bottom: 56px;
     font-size: var(--text-xl-fs);
     line-height: var(--text-xl-lh);
-    margin-bottom: 56px;
 }
 
 .hero-download {
-    display: grid;
     gap: 16px;
-    grid-auto-flow: column;
+    display: grid;
     padding: inherit;
+    grid-auto-flow: column;
 }
 
 .hero-download li,
@@ -48,9 +48,9 @@
 
 .hero-download img {
     height: 50px;
-    background-color: #FCFCFC;
     padding: 8px;
     border-radius: 8px;
+    background-color: #FCFCFC;
 }
 
 .section-title {
@@ -61,32 +61,32 @@
 }
 
 .section-title:before {
-    color: var(--c-neutral-white);
-    content: attr(data-title);
-    font-size: var(--headlines-extra-fs);
-    line-height: var(--headlines-extra-lh);
+    z-index: -2;
     position: absolute;
     white-space: nowrap;
-    z-index: -2;
+    content: attr(data-title);
+    color: var(--c-neutral-white);
+    font-size: var(--headlines-extra-fs);
+    line-height: var(--headlines-extra-lh);
 }
 
 .section-description {
+    margin-left: 50px;
     font-size: var(--text-xl-fs);
     line-height: var(--text-xl-lh);
-    margin-left: 50px;
 }
 
 .section-description b {
     display: block;
-    font-family: var(--ff-semibold);
-    font-size: var(--text-xxl-fs);
-    line-height: var(--text-xxl-lh);
     margin-bottom: 16px;
+    font-size: var(--text-xxl-fs);
+    font-family: var(--ff-semibold);
+    line-height: var(--text-xxl-lh);
 }
 
 .section-grid {
-    display: grid;
     gap: 175px;
+    display: grid;
     grid-template-columns: 580px auto;
 }
 
@@ -98,21 +98,25 @@
 #features .section-title:before,
 #featured .section-title:before {
     left: 0;
-    text-indent: -22px;
     top: 90px;
+    text-indent: -22px;
 }
 
 .features-grid {
-    display: grid;
     gap: 65px;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
     text-align: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .features-grid > div {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
+}
+
+.features-grid > div:hover {
+    transform: scale(1.01);
 }
 
 .features-grid > div img {
@@ -128,8 +132,8 @@
 
 #featured .featured-grid {
     gap: 48px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin: 48px 28px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #featured ::deep .buttonApp {
@@ -152,10 +156,10 @@
 
 .available-grid {
     gap: 115px 175px;
+    margin-top: 100px;
     grid-template-areas:
         "devices platforms"
         "devices screen";
-    margin-top: 100px;
 }
 
 #dotnet .section-title {
@@ -163,13 +167,13 @@
 }
 
 .platforms-wrapper {
-    display: grid;
     gap: 150px;
+    display: grid;
+    margin-top: 60px;
+    margin-left: 40px;
+    text-align: center;
     grid-area: platforms;
     grid-template-columns: repeat(4, max-content);
-    margin-left: 40px;
-    margin-top: 60px;
-    text-align: center;
 }
 
 .platforms-wrapper > div {
@@ -324,7 +328,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
     .hero-wrapper {
         max-width: unset;
     }
@@ -392,7 +395,6 @@
     }
 
     .section__hero {
-        min-height: auto;
         padding: 70px 20px;
     }
 
@@ -504,7 +506,6 @@
 }
 
 @media screen and (max-width: 400px) {
-
     .platforms-wrapper {
         gap: 70px;
         justify-content: center;
@@ -524,5 +525,4 @@
     #featured .section-title, .section-grid, ::deep .buttonApp {
         margin-left: 20px !important;
     }
-
 }
