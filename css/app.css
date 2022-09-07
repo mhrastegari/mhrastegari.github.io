@@ -1,6 +1,4 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
-@font-face {
+﻿@font-face {
     font-display: swap;
     font-family: "Segoe UI Light";
     font-style: normal;
@@ -91,6 +89,7 @@ html, body {
     font-family: var(--ff-regular);
     font-size: var(--text-m-fs);
     line-height: var(--text-m-lh);
+    margin: 0;
 }
 
 * {
@@ -255,5 +254,5 @@ ul {
 }
 
 .blazor-error-boundary::after {
-    content: "An error has occurred."
+    content: "An error has occurred.";
 }
