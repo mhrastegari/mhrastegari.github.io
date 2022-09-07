@@ -1,8 +1,4 @@
-﻿header .logo-image path {
-    transition: all 0.5s ease;
-}
-
-header {
+﻿header {
     font-family: var(--ff-semibold);
     color: var(--c-neutral-white);
     padding: 20px 60px;
@@ -74,6 +70,10 @@ header .logo {
     width: 185px;
     align-self: center;
     font-size: var(--text-xl-lh);
+}
+
+header .logo-image path {
+    transition: all 0.5s ease;
 }
 
 header .logo .logo-image {

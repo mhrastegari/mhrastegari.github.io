@@ -90,71 +90,72 @@
     grid-template-columns: 580px auto;
 }
 
-#features .section-title,
-#featured .section-title {
+#skills .section-title,
+#skills .section-title {
     margin-bottom: 58px;
 }
 
-#features .section-title:before,
-#featured .section-title:before {
+#skills .section-title:before,
+#skills .section-title:before {
     left: 0;
     top: 90px;
     text-indent: -22px;
 }
 
-.features-grid {
+.skills-grid {
     gap: 65px;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.features-grid > div {
+.skills-grid > div {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.features-grid > div:hover {
-    transform: scale(1.01);
+.skills-grid > div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-.features-grid > div img {
+.skills-grid > div img {
     flex: 0;
     height: 140px;
     width: auto;
 }
 
-.features-grid > div p {
+.skills-grid > div p {
     margin-top: 15px;
     font-weight: bold;
 }
 
-#featured .featured-grid {
+#repos .repos-grid {
     gap: 48px;
     margin: 48px 28px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-#featured ::deep .buttonApp {
+#repos ::deep .buttonApp {
     margin-left: 45px;
 }
 
-#available {
+#experience {
     padding-bottom: 70px;
     padding-right: 0;
 }
 
-#available .section-title {
+#experience .section-title {
     margin-bottom: 45px;
 }
 
-#available .section-title:before {
+#experience .section-title:before {
     right: 0;
     top: 160px;
 }
 
-.available-grid {
+.experience-grid {
     gap: 115px 175px;
     margin-top: 100px;
     grid-template-areas:
@@ -221,16 +222,16 @@
         grid-template-columns: 50% auto;
     }
 
-    .features-grid {
+    .skills-grid {
         gap: 0 20px;
         margin-top: 120px;
     }
 
-    #features {
+    #skills {
         padding-bottom: 0;
     }
 
-    #featured .featured-grid {
+    #repos .repos-grid {
         gap: 36px;
     }
 
@@ -239,7 +240,7 @@
         top: 150px;
     }
 
-    .available-grid {
+    .experience-grid {
         gap: 145px 25px;
         grid-template-columns: 480px auto;
     }
@@ -261,13 +262,13 @@
         padding-left: 50px;
     }
 
-    #available .section-title:before {
+    #experience .section-title:before {
         top: 140px;
     }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
-    #features .section-grid {
+    #skills .section-grid {
         grid-template-columns: 50% auto;
     }
 }
@@ -282,23 +283,23 @@
         max-width: 60%;
     }
 
-    .features-grid {
+    .skills-grid {
         gap: 0 65px;
         margin-top: 80px;
         padding: 0 80px;
     }
 
-    #featured .featured-grid {
+    #repos .repos-grid {
         gap: 24px;
     }
 
-    #featured .featured-grid,
-    #featured .buttonApp {
+    #repos .repos-grid,
+    #repos .buttonApp {
         margin-left: 30px;
         margin-right: 30px;
     }
 
-    .features-grid > div img {
+    .skills-grid > div img {
         height: 120px;
     }
 
@@ -313,7 +314,7 @@
         top: 80px;
     }
 
-    .available-grid {
+    .experience-grid {
         gap: 70px 30px;
         grid-template-columns: 1fr 2fr;
     }
@@ -322,12 +323,12 @@
         gap: 60px;
     }
 
-    #available .section-description {
+    #experience .section-description {
         margin-right: 50px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .hero-wrapper {
         max-width: unset;
     }
@@ -346,13 +347,13 @@
         margin-left: 30px;
     }
 
-    .features-grid {
+    .skills-grid {
         gap: 0 42px;
         margin-top: 60px;
         padding: 0;
     }
 
-    #available .section-description {
+    #experience .section-description {
         margin-right: 30px;
     }
 
@@ -375,7 +376,7 @@
         top: 70px;
     }
 
-    .available-grid {
+    .experience-grid {
         gap: 70px 60px;
     }
 
@@ -402,24 +403,24 @@
         margin-top: 10px;
     }
 
-    #features .section-title:before,
-    #featured .section-title:before {
+    #skills .section-title:before,
+    #repos .section-title:before {
         text-indent: -2px;
         top: 10px;
     }
 
-    #features .section-title,
-    #featured .section-title {
+    #skills .section-title,
+    #repos .section-title {
         margin-bottom: 20px;
     }
 
-    #featured .featured-grid,
-    #featured ::deep .buttonApp {
+    #repos .repos-grid,
+    #repos ::deep .buttonApp {
         margin-left: 0;
         margin-right: 0;
     }
 
-    #featured .featured-grid {
+    #repos .repos-grid {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         grid-auto-flow: unset;
@@ -432,7 +433,7 @@
         max-width: unset;
     }
 
-    .features-grid {
+    .skills-grid {
         gap: 20px;
         grid-auto-flow: row;
         grid-template-columns: repeat(2, 1fr);
@@ -441,20 +442,20 @@
         padding: 0 10px;
     }
 
-    .features-grid > div img {
+    .skills-grid > div img {
         flex: unset;
         height: 80px;
     }
 
-    #features {
+    #skills {
         padding-bottom: 40px;
     }
 
-    #available .section-title:before {
+    #experience .section-title:before {
         top: 30px;
     }
 
-    .available-grid {
+    .experience-grid {
         gap: 30px;
         grid-template-columns: auto;
         grid-template-areas:
@@ -500,7 +501,7 @@
         padding-left: 0;
     }
 
-    #available {
+    #experience {
         padding-bottom: 100px;
     }
 }
@@ -512,17 +513,8 @@
         grid-template-columns: auto auto;
     }
 
-    #featured .featured-grid {
+    #repos .repos-grid {
         overflow-x: scroll;
         padding: 5px 0 20px 0;
-    }
-
-    #featured {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    #featured .section-title, .section-grid, ::deep .buttonApp {
-        margin-left: 20px !important;
     }
 }
