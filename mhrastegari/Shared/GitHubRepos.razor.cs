@@ -5,7 +5,7 @@ namespace mhrastegari.Shared
     public partial class GitHubRepos
     {
         public List<Repository>? Repos = new List<Repository>();
-        public string MHGitHub { get; set; } = "mhrastegari77";
+        public string MHGitHub { get; set; } = "mhrastegari";
 
 		protected override async Task OnInitializedAsync()
 		{
