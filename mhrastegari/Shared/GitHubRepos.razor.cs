@@ -5,7 +5,7 @@ namespace mhrastegari.Shared
     public partial class GitHubRepos
     {
         public List<Repository>? Repos = new List<Repository>();
-        public string MHGitHub { get; set; } = "mhrastegari77";
+        public string MHGitHub { get; set; } = "mhrastegari";
 
 		protected override async Task OnInitializedAsync()
 		{
@@ -16,7 +16,7 @@ namespace mhrastegari.Shared
 		{
 			var github = new GitHubClient(new ProductHeaderValue("MHRastegari"));
 			var repositories = await github.Repository.GetAllForUser(name);
-			Repos = repositories.OrderByDescending(r => r.StargazersCount).Where(r => r.Fork != true && r.Name != MHGitHub && r.Name != $"{MHGitHub}.github.io").ToList();
+			Repos = repositories.OrderByDescending(r => r.StargazersCount).Where(r => r.Name != MHGitHub && r.Name != $"{MHGitHub}.github.io").ToList();
 		}
 	}
 }
