@@ -10,8 +10,7 @@
     padding: 80px unset;
     background-size: cover;
     color: var(--c-neutral-white);
-    background-color: var(--c-primary);
-    background: url("../images/hero_landing_image.png") no-repeat center bottom transparent;
+    background: url("../images/hero_landing_image.png") no-repeat center bottom var(--c-primary);
 }
 
 .hero-wrapper[b-xa2swmk8t5] {
