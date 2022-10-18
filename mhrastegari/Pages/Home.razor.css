@@ -120,7 +120,6 @@
 }
 
 .skills-grid > div img {
-    flex: 0;
     height: 140px;
     width: auto;
 }
