@@ -423,7 +423,10 @@
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         grid-auto-flow: unset;
+        padding: 5px 0 20px 0;
         margin-bottom: 30px;
+        overflow-x: scroll;
+        column-gap: normal;
         margin-top: 30px;
     }
 
@@ -513,8 +516,11 @@
     }
 
     #repos .repos-grid[b-xa2swmk8t5] {
-        overflow-x: scroll;
-        padding: 5px 0 20px 0;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-auto-flow: unset;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 }
 /* /Shared/Button.razor.rz.scp.css */
