@@ -1,6 +1,6 @@
-﻿namespace mhrastegari.Pages
+﻿namespace mhrastegari.Pages;
+
+public partial class Home
 {
-    public partial class Home
-    {
-    }
+
 }
