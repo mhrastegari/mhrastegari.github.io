@@ -1,0 +1,32 @@
+﻿@using Octokit
+
+@foreach (var repo in Repositories)
+{
+    <a href="@repo.HtmlUrl" target="_blank" class="repo-item">
+        <picture class="repo-item__picture">
+            <img src="images/github.png" alt="@repo.Name" height="47px" loading="lazy" />
+        </picture>
+        <h3 class="repo-item__title" style="overflow:hidden; font-size:12px">@repo.Name</h3>
+        <p class="repo-item__stars">⭐ @repo.StargazersCount</p>
+    </a>
+}
+
+@code {
+    public List<Repository> Repositories = new();
+
+    public string MHGitHub { get; set; } = "mhrastegari";
+
+	protected override async Task OnInitializedAsync()
+	{
+		await GetGitHubRepos(MHGitHub);
+	}
+
+	public async Task GetGitHubRepos(string name)
+	{
+		var github = new GitHubClient(new ProductHeaderValue("MHRastegari"));
+		var repositories = await github.Repository.GetAllForUser(name);
+		Repositories = repositories.OrderByDescending(r => r.StargazersCount)
+								   .Where(r => r.Name != MHGitHub && r.Name != $"{MHGitHub}.github.io")
+								   .ToList();
+	}
+}

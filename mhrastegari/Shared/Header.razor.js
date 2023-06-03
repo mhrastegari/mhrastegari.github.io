@@ -1,4 +1,5 @@
-﻿const openNavMenu = document.getElementById('menu-burger');
+﻿const menu = document.getElementById("menu");
+const openNavMenu = document.getElementById('menu-burger');
 const closeNavMenu = document.getElementById('close-menu-burger');
 
 const onScroll = () => {
@@ -16,22 +17,12 @@ const onScroll = () => {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 
-const addClass = () => {
-    const element = document.getElementById("menu");
-    if (element) element.classList.add("visible");
-}
-
-const removeClass = () => {
-    const element = document.getElementById("menu");
-    if (element) element.classList.remove("visible");
-}
-
 openNavMenu.addEventListener('click', () => {
-    addClass();
+    if (menu) menu.classList.add("visible");
 });
 
-closeNavMenu.addEventListener('click', () => {
-    removeClass();
+menu.addEventListener('click', () => {
+    if (menu) menu.classList.remove("visible");
 });
 
 onScroll();

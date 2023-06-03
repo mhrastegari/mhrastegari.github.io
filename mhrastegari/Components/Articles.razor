@@ -1,0 +1,43 @@
+﻿@using System.Net.Http
+@using Newtonsoft.Json;
+@using mhrastegari.Models;
+@inject HttpClient HttpClient
+
+@foreach (var post in DevToPosts)
+{
+    <a href="@post.Url" target="_blank" class="card-item">
+        <img class="top-img"
+             src="@(!string.IsNullOrEmpty(post.Cover_Image) ? post.Cover_Image : "images/devto.png")"
+             alt="Post Image">
+        <div class="card-body" style=" padding: 10px;">
+            <h3 class="card-title">@post.Title</h3>
+            <p class="card-text">@post.Description</p>
+        </div>
+    </a>
+}
+
+@code {
+    List<ForemArticle>? DevToPosts { get; set; } = new();
+    string Username { get; set; } = "mhrastegari";
+
+    protected override async Task OnInitializedAsync()
+    {
+        DevToPosts = await FetchDevToPosts();
+    }
+
+    async Task<List<ForemArticle>> FetchDevToPosts()
+    {
+        var url = $"https://dev.to/api/articles?username={Username}";
+
+        var response = await HttpClient.GetAsync(url);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var json = await response.Content.ReadAsStringAsync();
+            var posts = JsonConvert.DeserializeObject<List<ForemArticle>>(json);
+            return posts;
+        }
+
+        return new List<ForemArticle>();
+    }
+}

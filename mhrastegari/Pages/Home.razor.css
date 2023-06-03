@@ -129,7 +129,7 @@
     font-weight: bold;
 }
 
-#repos .list {
+.list {
     gap: 0;
     display: flex;
     padding: 15px 0;
