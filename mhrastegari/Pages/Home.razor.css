@@ -129,10 +129,12 @@
     font-weight: bold;
 }
 
-#repos .repos-grid {
-    gap: 48px;
+#repos .list {
+    gap: 0;
+    display: flex;
+    padding: 15px 0;
     margin: 48px 28px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    overflow-x: scroll;
 }
 
 #repos ::deep .buttonApp {
@@ -229,10 +231,6 @@
         padding-bottom: 0;
     }
 
-    #repos .repos-grid {
-        gap: 36px;
-    }
-
     .devices-float-image {
         right: -200px;
         top: 150px;
@@ -287,11 +285,7 @@
         padding: 0 80px;
     }
 
-    #repos .repos-grid {
-        gap: 24px;
-    }
-
-    #repos .repos-grid,
+    #repos .list,
     #repos .buttonApp {
         margin-left: 30px;
         margin-right: 30px;
@@ -412,20 +406,15 @@
         margin-bottom: 20px;
     }
 
-    #repos .repos-grid,
+    #repos .list,
     #repos ::deep .buttonApp {
         margin-left: 0;
         margin-right: 0;
     }
 
-    #repos .repos-grid {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        grid-auto-flow: unset;
+    #repos .list {
         padding: 5px 0 20px 0;
         margin-bottom: 30px;
-        overflow-x: scroll;
-        column-gap: normal;
         margin-top: 30px;
     }
 
@@ -514,10 +503,7 @@
         grid-template-columns: auto auto;
     }
 
-    #repos .repos-grid {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        grid-auto-flow: unset;
+    #repos .list {
         margin-bottom: 30px;
         margin-top: 30px;
     }
