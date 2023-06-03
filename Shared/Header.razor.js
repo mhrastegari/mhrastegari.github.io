@@ -17,12 +17,24 @@ const onScroll = () => {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 
-openNavMenu.addEventListener('click', () => {
+const addClass = () => {
     if (menu) menu.classList.add("visible");
+}
+
+const removeClass = () => {
+    if (menu) menu.classList.remove("visible");
+}
+
+openNavMenu.addEventListener('click', () => {
+    addClass();
+});
+
+closeNavMenu.addEventListener('click', () => {
+    removeClass();
 });
 
 menu.addEventListener('click', () => {
-    if (menu) menu.classList.remove("visible");
+    removeClass();
 });
 
 onScroll();
