@@ -4,8 +4,9 @@ name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   deploy-to-github-pages:
