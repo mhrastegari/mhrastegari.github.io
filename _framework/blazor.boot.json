@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "mhrastegari",
   "resources": {
-    "hash": "sha256-CoiG1dlfkuidrqrFRYFzw4XyntvHC6VjDeueG7/Bo/8=",
+    "hash": "sha256-jIh8FlMoI5DyrKRjVga0T7J25nGFVN3rtGeCAZzo/ck=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.wzxwl5s97r.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "mhrastegari.wasm": "sha256-IxhKTCj6tXJZemzbaIPe4V9sROwHHVeDtGuHVyy/y1I=",
+      "mhrastegari.wasm": "sha256-ougjM27p5FPUiCsAUPCQOUxFUakJMCVIIC3DmJMNq4I=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-Mm5rueLRos4ozjt/DcFYidFrJ3Fz40U2jWefNgmh92M=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-ZkbkQhJGeEOlRqxDzdU8JP1cnR7UCcQgPsOLuSgzDDc=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-3lk/351jh6AEHyfME1fgB4sLbGy6gh+Dx3eQMB3MCe0=",
