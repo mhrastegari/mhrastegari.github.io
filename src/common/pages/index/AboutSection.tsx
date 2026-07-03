@@ -2,9 +2,9 @@ import { SectionTitle } from '@components/SectionTitle';
 
 const items = [
   '6+ years across web, mobile, and desktop applications',
-  'Production React.js and TypeScript work connected to real backend systems',
-  'Backend experience with ASP.NET Core, REST APIs, EF Core, and PostgreSQL basics',
-  'Strong background in Blazor, Bit Platform, .NET MAUI, and Xamarin',
+  'React and TypeScript for modern web products',
+  'ASP.NET Core, REST APIs, EF Core, and PostgreSQL',
+  'Blazor, Bit Platform, .NET MAUI, and Xamarin experience',
 ];
 
 export function AboutSection() {
@@ -20,9 +20,8 @@ export function AboutSection() {
         <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-lg bg-ink p-8 text-white shadow-soft">
             <p className="text-xl font-semibold leading-8">
-              I am a Software Developer / Frontend-focused Full-stack Developer working
-              across React.js, TypeScript, ASP.NET Core, Blazor, .NET MAUI, Xamarin, and
-              scalable application systems.
+              I am a Software Developer building products with React, TypeScript,
+              ASP.NET Core, Blazor, and .NET MAUI.
             </p>
 
             <p className="mt-5 leading-7 text-slate-300">

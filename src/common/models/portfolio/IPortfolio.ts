@@ -8,7 +8,6 @@ export interface IExperience {
   role: string;
   period: string;
   team: string;
-  description: string;
   highlights: string[];
 }
 

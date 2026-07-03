@@ -49,9 +49,8 @@ export function HeroSection() {
           </p>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            I build scalable web, mobile, and desktop applications with a strong focus
-            on React.js, TypeScript, and production UI architecture, backed by ASP.NET
-            Core, REST API integration, Blazor, .NET MAUI, Xamarin, and PWA experience.
+            I build practical web, mobile, and desktop applications with React,
+            TypeScript, ASP.NET Core, Blazor, and .NET MAUI.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

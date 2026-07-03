@@ -6,8 +6,8 @@ export function ExperienceSection() {
     <section id="experience" className="py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionTitle eyebrow="Experience" title="Software development experience">
-          Experience across React products, ASP.NET Core APIs, Blazor UI systems, and
-          cross-platform .NET applications for web, mobile, and desktop.
+          Experience across React, ASP.NET Core, Blazor, and cross-platform .NET
+          applications for web, mobile, and desktop.
         </SectionTitle>
 
         <div className="space-y-5">
@@ -18,28 +18,26 @@ export function ExperienceSection() {
             >
               <div>
                 <div className="text-sm font-bold text-accent">{experience.period}</div>
+
                 <h3 className="mt-2 text-xl font-bold text-ink">
                   {experience.company}
                 </h3>
+
                 <p className="mt-2 text-sm font-semibold text-slate-600">
                   {experience.role}
                 </p>
+
                 <p className="mt-1 text-sm text-slate-500">{experience.team}</p>
               </div>
 
-              <div>
-                <p className="leading-7 text-slate-600">{experience.description}</p>
-                <ul className="mt-5 grid gap-3 sm:grid-cols-3">
-                  {experience.highlights.map((highlight) => (
-                    <li
-                      key={highlight}
-                      className="rounded-lg bg-slate-50 p-4 text-sm leading-6 text-slate-700"
-                    >
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="space-y-2 rounded-lg bg-slate-50 p-4 text-sm text-slate-700">
+                {experience.highlights.map((highlight) => (
+                  <li key={highlight} className="flex gap-3 leading-7">
+                    <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
