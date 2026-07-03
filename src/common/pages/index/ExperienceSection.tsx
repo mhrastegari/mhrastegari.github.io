@@ -5,10 +5,9 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <SectionTitle eyebrow="Experience" title="Product-focused software roles">
-          A software development path shaped by React product work, ASP.NET Core-backed
-          systems, Blazor UI foundations, and cross-platform .NET application
-          development.
+        <SectionTitle eyebrow="Experience" title="Software development experience">
+          Experience across React products, ASP.NET Core APIs, Blazor UI systems, and
+          cross-platform .NET applications for web, mobile, and desktop.
         </SectionTitle>
 
         <div className="space-y-5">

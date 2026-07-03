@@ -24,50 +24,50 @@ export const experiences: IExperience[] = [
     period: '2024 - Present',
     team: 'React.js / ASP.NET Core',
     description:
-      'Building production travel and tourism systems with React.js, TypeScript, ASP.NET Core, and API-driven architecture, with a focus on scalable frontend structure, reliable integrations, and maintainable product features.',
+      'Building production travel and tourism systems with React.js, TypeScript, ASP.NET Core, and API-driven architecture, with a focus on maintainable product features and reliable integrations.',
     highlights: [
       'Develops reusable React and TypeScript features for travel and tourism workflows.',
-      'Works across component architecture, state management, forms, API integration, and backend-connected user flows.',
-      'Contributes to ASP.NET Core-backed features and reliable delivery for responsive web and PWA experiences.',
+      'Works across component architecture, state management, forms, APIs, and data-driven screens.',
+      'Contributes to ASP.NET Core features and responsive web experiences.',
     ],
   },
   {
     company: 'Bit Platform / Bit Foundation',
-    role: 'Frontend / Cross-platform Developer',
+    role: 'Software / Cross-platform Developer',
     period: '2020 - 2024',
     team: '.NET MAUI / Blazor',
     description:
-      'Worked on Blazor, Bit Platform, and cross-platform application systems, including reusable UI components, shared frontend foundations, and .NET-based application architecture for web, mobile, and desktop.',
+      'Worked on Blazor, Bit Platform, and cross-platform application systems, including reusable UI components and .NET-based foundations for web, mobile, and desktop applications.',
     highlights: [
       'Contributed to Blazor and Bit BlazorUI component-library work.',
       'Built reusable UI patterns for scalable .NET and Blazor applications.',
-      'Worked with .NET MAUI, Xamarin, C#, web technologies, and backend-connected application logic.',
+      'Worked with .NET MAUI, Xamarin, C#, web technologies, and shared application logic.',
     ],
   },
   {
     company: 'Abrisham Online Clinic Platform',
-    role: 'Frontend / Cross-platform Developer',
+    role: 'Software / Cross-platform Developer',
     period: '2020 - 2024',
     team: '.NET MAUI / Blazor',
     description:
-      'Contributed to healthcare platform features using Blazor and .NET cross-platform technologies, with attention to maintainable UI components, backend-connected workflows, and practical user experiences.',
+      'Contributed to healthcare platform features using Blazor and .NET cross-platform technologies, with attention to maintainable UI components, service integration, and practical user experiences.',
     highlights: [
-      'Implemented frontend features for clinical and healthcare workflows.',
-      'Worked with shared UI systems across web, mobile, and app surfaces.',
+      'Implemented features for clinical and healthcare workflows.',
+      'Worked with shared UI systems across web, mobile, and desktop surfaces.',
       'Integrated application screens with backend data while maintaining responsive and accessible experiences.',
     ],
   },
   {
     company: 'Functionland',
-    role: 'Frontend / Cross-platform Developer',
+    role: 'Software / Cross-platform Developer',
     period: '2020 - 2024',
     team: '.NET MAUI / Blazor',
     description:
-      'Worked on Functionland-related frontend and cross-platform app experiences, including file-management interfaces, storage-related product flows, and application UI built around .NET technologies.',
+      'Worked on Functionland-related cross-platform app experiences, including file-management interfaces, storage-related product features, and application UI built around .NET technologies.',
     highlights: [
       'Contributed to FxFiles and related file-management application UI work.',
-      'Worked on mobile, desktop, and web-facing product surfaces built with .NET technologies.',
-      'Built reusable frontend features around storage workflows, backend integration, and practical UX.',
+      'Worked on mobile, desktop, and web product surfaces built with .NET technologies.',
+      'Built reusable features around file management, service integration, and practical UX.',
     ],
   },
 ];
