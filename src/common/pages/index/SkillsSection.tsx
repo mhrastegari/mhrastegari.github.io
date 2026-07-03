@@ -5,9 +5,9 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <SectionTitle eyebrow="Skills" title="Technology direction">
-          A focused stack for frontend product delivery, reusable UI systems,
-          and cross-platform application work.
+        <SectionTitle eyebrow="Skills" title="Technology stack">
+          The tools and technologies I use to build practical applications across web,
+          backend, mobile, and desktop.
         </SectionTitle>
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">

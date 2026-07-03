@@ -118,7 +118,16 @@ export const projects: IProject[] = [
 export const skillGroups: ISkillGroup[] = [
   {
     title: 'Frontend',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'Tailwind'],
+    items: [
+      'React',
+      'TypeScript',
+      'JavaScript',
+      'PWA',
+      'HTML',
+      'CSS',
+      'SCSS',
+      'Tailwind',
+    ],
   },
   {
     title: 'Backend',
@@ -126,9 +135,10 @@ export const skillGroups: ISkillGroup[] = [
       'C#',
       'ASP.NET Core',
       'REST APIs',
+      'API integration',
       'Entity Framework Core',
+      'SQL',
       'PostgreSQL',
-      'SQL basics',
       'Authentication flows',
     ],
   },
@@ -138,10 +148,8 @@ export const skillGroups: ISkillGroup[] = [
       'Blazor',
       '.NET MAUI',
       'Xamarin',
-      'C#',
-      'PWA',
       'Hybrid apps',
-      'Cross-platform UI'
+      'Cross-platform UI',
     ],
   },
   {

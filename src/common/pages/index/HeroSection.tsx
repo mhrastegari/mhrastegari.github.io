@@ -10,7 +10,7 @@ export function HeroSection() {
     <section id="top" className="overflow-hidden">
       <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl gap-12 p-4 md:grid-cols-3 md:items-center md:px-6 md:py-20">
         <div className="md:col-span-2">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-lg border border-teal-100 bg-white px-4 py-2 text-xs font-semibold text-accent shadow-sm md:text-sm">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-lg border border-teal-100 bg-white p-2 text-xs font-semibold text-accent shadow-sm md:text-sm">
             React.js • TypeScript • ASP.NET Core • Blazor • .NET MAUI
           </div>
 
