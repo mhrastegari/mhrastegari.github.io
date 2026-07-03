@@ -43,7 +43,7 @@ export const experiences: IExperience[] = [
   {
     company: 'Abrisham Online Clinic Platform',
     role: 'Software / Cross-platform Developer',
-    period: '2020 - 2024',
+    period: '2022 - 2023',
     team: '.NET MAUI / Blazor',
     highlights: [
       'Built healthcare and clinical workflows with Blazor and .NET technologies.',
@@ -54,7 +54,7 @@ export const experiences: IExperience[] = [
   {
     company: 'Functionland',
     role: 'Software / Cross-platform Developer',
-    period: '2020 - 2024',
+    period: '2021 - 2022',
     team: '.NET MAUI / Blazor',
     highlights: [
       'Contributed to FxFiles and file-management application UI.',
