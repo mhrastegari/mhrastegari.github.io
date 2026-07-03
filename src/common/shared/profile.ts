@@ -76,8 +76,7 @@ export const projects: IProject[] = [
   {
     title: 'Bit Platform / Bit BlazorUI',
     type: 'UI Library / Project Templates',
-    description:
-      'Project templates and component-library work around Bit Platform and BlazorUI, focused on reusable UI foundations for .NET and Blazor applications.',
+    description: 'Project templates and component-library work around Bit Platform and BlazorUI, focused on reusable UI foundations for .NET and Blazor applications.',
     stack: ['Blazor', 'C#', 'Bit Platform', 'UI Components'],
     color: '#0065ef',
     href: 'https://github.com/bitfoundation/bitplatform',
@@ -86,8 +85,7 @@ export const projects: IProject[] = [
   {
     title: 'Maccan Travel / Tourism Systems',
     type: 'Web / PWA',
-    description:
-      'Production travel and tourism product interfaces built with React.js, TypeScript, Tailwind, and ASP.NET Core-backed APIs, focused on responsive UX, maintainable feature structure, and real business workflows.',
+    description: 'Production travel and tourism product interfaces built with React.js, TypeScript, Tailwind, and ASP.NET Core APIs, focused on responsive UX, maintainable feature structure, and real business workflows.',
     stack: ['React.js', 'TypeScript', 'Tailwind', 'PWA', 'C#', 'ASP.NET Core'],
     color: '#578993',
     href: 'https://maccan.travel/en/',
@@ -96,8 +94,7 @@ export const projects: IProject[] = [
   {
     title: 'WeTime',
     type: 'Mobile / Web / Cross-platform App',
-    description:
-      'A cross-platform women’s health application for pregnancy, ovulation, and menstrual calendar workflows, built with Blazor, .NET MAUI, ASP.NET Core, and reusable UI patterns.',
+    description: 'A cross-platform women’s health application for pregnancy, ovulation, and menstrual calendar workflows, built with Blazor, .NET MAUI, ASP.NET Core, and reusable UI patterns.',
     stack: ['C#', 'ASP.NET Core', 'Blazor', '.NET MAUI', 'Cross-platform UI'],
     color: '#ffffff',
     href: 'https://play.google.com/store/apps/details?id=com.wetime.periodtracker',
@@ -106,8 +103,7 @@ export const projects: IProject[] = [
   {
     title: 'FxFiles',
     type: 'Mobile / Desktop / Storage App',
-    description:
-      'File-management and storage-related product UI work for Functionland, with emphasis on app-quality screens, service-connected workflows, and maintainable structure.',
+    description: 'File-management and storage-related product UI work for Functionland, with emphasis on app-quality screens, service integration, and maintainable structure.',
     stack: ['.NET MAUI', 'Blazor', 'C#', 'Storage Workflows'],
     color: '#328c8c',
     href: 'https://github.com/Functionland/Fx-Files',

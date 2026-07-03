@@ -6,8 +6,8 @@ export function ProjectsSection() {
     <section id="projects" className="bg-white py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionTitle eyebrow="Projects" title="Product and platform work">
-          Selected work across UI libraries, travel interfaces, PWA-ready web apps, and
-          cross-platform product experiences.
+          Selected work from real products, open-source platforms, travel systems, and
+          cross-platform applications.
         </SectionTitle>
 
         <div className="grid gap-5 md:grid-cols-2">
