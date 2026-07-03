@@ -1,3 +1,4 @@
+import { Icon } from '@components/Icon';
 import { SectionTitle } from '@components/SectionTitle';
 import { projects } from '@shared/profile';
 
@@ -37,9 +38,15 @@ export function ProjectsSection() {
               )}
 
               <div className="flex flex-1 flex-col p-6">
-                <div className="text-xs font-bold uppercase text-accent">
-                  {project.type}
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-accent shadow-sm">
+                    <Icon name={project.icon} className="h-5 w-5" />
+                  </div>
+                  <div className="text-xs font-bold uppercase text-accent">
+                    {project.type}
+                  </div>
                 </div>
+
                 <h3 className="mt-3 text-2xl font-bold text-ink">{project.title}</h3>
                 <p className="mt-3 flex-1 leading-7 text-slate-600">
                   {project.description}
@@ -59,9 +66,10 @@ export function ProjectsSection() {
                     href={project.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-5 text-sm font-bold text-accent hover:text-teal-800"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-teal-800"
                   >
                     View project
+                    <Icon name="external" className="h-4 w-4" />
                   </a>
                 )}
               </div>

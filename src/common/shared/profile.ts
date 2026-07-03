@@ -71,6 +71,7 @@ export const projects: IProject[] = [
     description: 'Project templates and Blazor UI component work for reusable .NET application foundations.',
     stack: ['Blazor', 'C#', 'Bit Platform', 'UI Components'],
     color: '#0065ef',
+    icon: 'layers',
     href: 'https://github.com/bitfoundation/bitplatform',
     image: '/bit-icon-512.png',
   },
@@ -80,6 +81,7 @@ export const projects: IProject[] = [
     description: 'Travel and tourism product interfaces built with React, TypeScript, Tailwind, and ASP.NET Core APIs.',
     stack: ['React.js', 'TypeScript', 'Tailwind', 'PWA', 'C#', 'ASP.NET Core'],
     color: '#578993',
+    icon: 'web',
     href: 'https://maccan.travel/en/',
     image: '/maccan.svg',
   },
@@ -89,6 +91,7 @@ export const projects: IProject[] = [
     description: 'A cross-platform women’s health app built with Blazor, .NET MAUI, and ASP.NET Core.',
     stack: ['C#', 'ASP.NET Core', 'Blazor', '.NET MAUI', 'Cross-platform UI'],
     color: '#ffffff',
+    icon: 'app',
     href: 'https://play.google.com/store/apps/details?id=com.wetime.periodtracker',
     image: '/wetime.png',
   },
@@ -98,6 +101,7 @@ export const projects: IProject[] = [
     description: 'A cross-platform file-management and storage product for Functionland.',
     stack: ['.NET MAUI', 'Blazor', 'C#', 'Storage Workflows'],
     color: '#328c8c',
+    icon: 'database',
     href: 'https://github.com/Functionland/Fx-Files',
     image: '/fxfiles.png',
   },
@@ -106,6 +110,7 @@ export const projects: IProject[] = [
 export const skillGroups: ISkillGroup[] = [
   {
     title: 'Frontend',
+    icon: 'code',
     items: [
       'React',
       'TypeScript',
@@ -119,6 +124,7 @@ export const skillGroups: ISkillGroup[] = [
   },
   {
     title: 'Backend',
+    icon: 'server',
     items: [
       'C#',
       'ASP.NET Core',
@@ -129,18 +135,19 @@ export const skillGroups: ISkillGroup[] = [
     ],
   },
   {
-    title: '.NET & Cross-platform',
+    title: '.NET',
+    icon: 'app',
     items: [
       'Blazor',
       '.NET MAUI',
       'Xamarin',
       'UWP',
       'Hybrid apps',
-      'Cross-platform UI',
     ],
   },
   {
     title: 'Tools',
+    icon: 'tool',
     items: [
       'GitHub',
       'Figma',

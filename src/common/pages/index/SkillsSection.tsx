@@ -1,3 +1,4 @@
+import { Icon } from '@components/Icon';
 import { SectionTitle } from '@components/SectionTitle';
 import { skillGroups } from '@shared/profile';
 
@@ -16,7 +17,13 @@ export function SkillsSection() {
               key={group.title}
               className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
             >
-              <h3 className="text-lg font-bold text-ink">{group.title}</h3>
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-accent">
+                  <Icon name={group.icon} className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-bold text-ink">{group.title}</h3>
+              </div>
+
               <div className="mt-5 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span

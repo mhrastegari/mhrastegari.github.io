@@ -1,3 +1,5 @@
+import type { IconName } from '@components/Icon';
+
 export interface ILink {
   title: string;
   href: string;
@@ -17,11 +19,13 @@ export interface IProject {
   description: string;
   stack: string[];
   color: string;
+  icon: IconName;
   href?: string;
   image?: string;
 }
 
 export interface ISkillGroup {
   title: string;
+  icon: IconName;
   items: string[];
 }

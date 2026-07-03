@@ -1,11 +1,24 @@
+import { Icon, IconName } from '@components/Icon';
 import { SectionTitle } from '@components/SectionTitle';
 
 const items = [
-  '6+ years across web, mobile, and desktop applications',
-  'React and TypeScript for modern web products',
-  'ASP.NET Core, REST APIs, EF Core, and PostgreSQL',
-  'Blazor, Bit Platform, .NET MAUI, and Xamarin experience',
-];
+  {
+    icon: 'app',
+    text: '6+ years across web, mobile, and desktop apps',
+  },
+  {
+    icon: 'code',
+    text: 'React and TypeScript for modern web products',
+  },
+  {
+    icon: 'server',
+    text: 'ASP.NET Core, REST APIs, EF Core, and PostgreSQL',
+  },
+  {
+    icon: 'layers',
+    text: 'Blazor, Bit Platform, .NET MAUI, and Xamarin experience',
+  },
+] satisfies { icon: IconName; text: string }[];
 
 export function AboutSection() {
   return (
@@ -34,11 +47,13 @@ export function AboutSection() {
           <div className="grid gap-4 sm:grid-cols-2">
             {items.map((item) => (
               <div
-                key={item}
+                key={item.text}
                 className="rounded-lg border border-slate-200 bg-slate-50 p-5"
               >
-                <div className="mb-4 h-2 w-12 rounded bg-accent" />
-                <p className="font-semibold leading-7 text-slate-800">{item}</p>
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-white text-accent shadow-sm">
+                  <Icon name={item.icon} className="h-5 w-5" />
+                </div>
+                <p className="font-semibold leading-7 text-slate-800">{item.text}</p>
               </div>
             ))}
           </div>

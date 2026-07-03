@@ -1,5 +1,8 @@
 import { Button } from '@components/Button';
+import { Icon } from '@components/Icon';
 import { profileLinks, resumeHref } from '@shared/profile';
+
+const coreStack = ['React + TS', 'ASP.NET Core', 'Blazor UI', '.NET MAUI'];
 
 export function HeroSection() {
   const github = profileLinks.find((link) => link.title === 'GitHub');
@@ -100,10 +103,15 @@ export function HeroSection() {
               <div className="text-sm font-bold uppercase text-accent">Core Stack</div>
 
               <div className="mt-3 grid grid-cols-2 gap-3 text-sm text-slate-600">
-                <span className="rounded-lg bg-slate-50 p-3">React + TS</span>
-                <span className="rounded-lg bg-slate-50 p-3">ASP.NET Core</span>
-                <span className="rounded-lg bg-slate-50 p-3">Blazor UI</span>
-                <span className="rounded-lg bg-slate-50 p-3">.NET MAUI</span>
+                {coreStack.map((item) => (
+                  <span
+                    key={item}
+                    className="flex items-center gap-2 rounded-lg bg-slate-50 p-3"
+                  >
+                    <Icon name="check" className="h-4 w-4 text-accent" />
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
