@@ -98,9 +98,7 @@ export function HeroSection() {
             />
 
             <div className="border-t border-slate-100 p-5">
-              <div className="text-sm font-bold uppercase text-accent">
-                Current Direction
-              </div>
+              <div className="text-sm font-bold uppercase text-accent">Core Stack</div>
 
               <div className="mt-3 grid grid-cols-2 gap-3 text-sm text-slate-600">
                 <span className="rounded-lg bg-slate-50 p-3">React + TS</span>

@@ -20,11 +20,11 @@ export function Header({ links }: IHeaderProps) {
     <header className="sticky top-0 z-30 border-b border-white/70 bg-slate-50/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         <a href="#top" className="flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-ink text-sm font-bold text-white">
-            MH
+          <span className="flex h-9 w-10 items-center justify-center rounded-lg bg-ink text-xs font-bold text-white">
+            MHR
           </span>
           <span className="hidden text-sm font-bold text-ink xs:block">
-            MH Rastegari
+            M. H. Rastegari
           </span>
         </a>
 
