@@ -43,8 +43,12 @@ export function HeroSection() {
             </div>
           </div>
 
-          <h1 className="max-w-4xl text-4xl font-black leading-[1.02] text-ink sm:text-5xl md:text-7xl">
-            Mohammad Hossein Rastegarinia
+          <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl md:text-7xl">
+            Mohammad Hossein
+            <br />
+            <span className="bg-gradient-to-r from-accent to-cyan-500 bg-clip-text text-transparent">
+              Rastegarinia
+            </span>
           </h1>
 
           <p className="mt-5 text-xl font-semibold text-slate-700">

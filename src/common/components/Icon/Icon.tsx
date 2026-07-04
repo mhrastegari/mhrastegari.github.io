@@ -2,12 +2,14 @@ import { SVGProps } from 'react';
 
 export type IconName =
   | 'app'
+  | 'arrow-up'
   | 'briefcase'
   | 'check'
   | 'code'
   | 'database'
   | 'external'
   | 'layers'
+  | 'mail'
   | 'server'
   | 'spark'
   | 'tool'
@@ -22,6 +24,7 @@ const paths: Record<IconName, string[]> = {
     'M7 4.5h10A2.5 2.5 0 0 1 19.5 7v10a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 17V7A2.5 2.5 0 0 1 7 4.5Z',
     'M8 8h8M8 12h8M8 16h4',
   ],
+  'arrow-up': ['M12 19V5', 'm5.5 11.5 6.5-6.5 6.5 6.5'],
   briefcase: [
     'M8.5 7.5V6A2.5 2.5 0 0 1 11 3.5h2A2.5 2.5 0 0 1 15.5 6v1.5',
     'M4.5 8.5h15v9A2.5 2.5 0 0 1 17 20H7a2.5 2.5 0 0 1-2.5-2.5v-9Z',
@@ -36,6 +39,7 @@ const paths: Record<IconName, string[]> = {
   ],
   external: ['M8 8h8v8', 'M16 8 7.5 16.5', 'M6 5.5h-1.5v14h14V18'],
   layers: ['m12 4 8 4-8 4-8-4 8-4Z', 'm4 12 8 4 8-4', 'm4 16 8 4 8-4'],
+  mail: ['M4 6.5h16v11H4v-11Z', 'm5 7.5 7 5 7-5'],
   server: ['M5 5.5h14v5H5v-5Z', 'M5 13.5h14v5H5v-5Z', 'M8 8h.01M8 16h.01'],
   spark: ['M12 3.5 14.1 9l5.4 2-5.4 2L12 18.5 9.9 13l-5.4-2 5.4-2L12 3.5Z'],
   tool: [

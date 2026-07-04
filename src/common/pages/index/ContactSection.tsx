@@ -1,3 +1,5 @@
+import { Icon } from '@components/Icon';
+
 const email = 'mh.rastegari@outlook.com';
 
 export function ContactSection() {
@@ -24,27 +26,7 @@ export function ContactSection() {
           <div className="rounded-lg bg-blue-100 p-6 text-ink shadow-soft">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white text-accent shadow-sm">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M4 6.5h16v11H4v-11Z"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="m5 7.5 7 5 7-5"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <Icon name="mail" className="h-5 w-5" />
               </div>
 
               <div>
